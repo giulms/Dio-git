@@ -36,7 +36,7 @@ git restore NOME DO ARQUIVO
 ```
 git log
 ```
-- Realizaz um commit levando  as mudanças o ambiente local pro repositório git.
+- Realiza um commit levando  as mudanças o ambiente local pro repositório git.
 ```
 git commit -m"MENSAGEM"
 ```
@@ -69,6 +69,15 @@ git reset NOME DO ARQUIVO
 - Dá um histórico detalhado das alterações feitas.
 ```
 git reflog
+```
+## 🤖 Comandos Gitbub
+- Deixa o repositório local vinculado com o repositório remoto.
+```
+git remote add origin URL DO REPOSITÓRIO GITHUB
+```
+- Transfere as alterações do repositório local para o remoto.
+```
+git push -u origin main
 ```
 ## ⭐ Comandos extras
 - Entra na pasta selecionada.
