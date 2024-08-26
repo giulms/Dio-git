@@ -12,7 +12,7 @@ Repostitório para resumo do curso da [DIO](https://www.dio.me/) sobre Git e Git
 ```
 git init
 ```
-- Remove o versionamento (a pasta) do git. **se você der git init na pasta errada**
+- Remove o versionamento (a pasta) do git **se você der git init na pasta errada.**
 ```
 rm -rf .git
 ```
@@ -20,19 +20,66 @@ rm -rf .git
 ```
 git status
 ```
-- Sobe todos os arquivos do Working Directory (Arquivos que foram modificados ou adicionados a pasta, e que não estejam vazios) para o repositório Git.
+- Sobe todos os arquivos do Working Directory (Arquivos que foram modificados ou adicionados a pasta, e que não estejam vazios) para ficarem prontos para serem commitados (Adicionados ao repositório).
 ```
 git add .
 ```
-- Sobre o arquivo selecionado para o repositório git.
+- Seleciona o arquivo especifico para entrar na área de espera para ser commitado (Adicionado ao repositório).
 ```
-git add "NOME DO ARQUIVO"
+git add NOME DO ARQUIVO
 ```
 - Restaura as alterações anteriores desde a ultima mudança.
 ```
-git restore "NOME DO ARQUIVO"
+git restore NOME DO ARQUIVO
 ```
-- Mostra o histórico dos commits
+- Mostra o histórico dos commits.
 ```
 git log
+```
+- Realizaz um commit levando  as mudanças o ambiente local pro repositório git.
+```
+git commit -m"MENSAGEM"
+```
+- Modifica a mensagem do ultimo commit feito.
+```
+git commit --amend -m"NOVA MENSAGEM"
+```
+- Abre o editor (Tambem serve para editar mensagens de commits). **Aperta a tecla i para editar e pra sair aperta "Esc" e digita ":wq"**
+```
+git commit --amend
+```
+- Faz o Commit voltar do repositório e ir para a área de preparação (Área verde onde se prepara para ser commitado).
+```
+git reset --soft HASH DO COMMIT
+```
+O HASH é o código em amarelo que aparece ao lado do commit quando você dá "git log"
+
+- Faz o commit voltar seus arquivos como Untracked files (Arquivos que o git não conhece, e que não estão na área de preparação).
+```
+git reset --mixed HASH DO COMMIT ou git reset HASH DO COMMIT
+```
+- Faz o commit ser totalmente apagado do repositório e apaga **todos os arquivos do commit**.
+```
+git reset --hard HASH DO COMMIT
+```
+- Remove o arquivo especifico da área de preparação e vai para o "Arquivos Desconhecidos".
+```
+git reset NOME DO ARQUIVO
+```
+- Dá um histórico detalhado das alterações feitas.
+```
+git reflog
+```
+## ⭐ Comandos extras
+- Entra na pasta selecionada.
+```
+cd PASTA SELECIONADA
+```
+- Cria uma pasta dentro da pasta selecionada.
+```
+mkdir NOME DA PASTA
+```
+- Cria arquivos vazios.
+```
+touch NOME DO ARQUIVO
 ```
