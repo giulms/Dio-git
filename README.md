@@ -75,6 +75,10 @@ git reflog
 ```
 git remote add origin URL DO REPOSITÓRIO GITHUB
 ```
+- Mostra todas as branchs e os últimos commits feitos nela.
+```
+git branch -v
+```
 - Transfere as alterações do repositório remoto para o repositório local.
 ```
 git pull
