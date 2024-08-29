@@ -75,6 +75,10 @@ git reflog
 ```
 git remote add origin URL DO REPOSITÓRIO GITHUB
 ```
+- Clona apenas a branch que você desejar.
+```
+git clone URL DO REPOSITORIO --brach NOME DA BRANCH --single-branch
+```
 - Mostra todas as branchs e os últimos commits feitos nela.
 ```
 git branch -v
