@@ -75,6 +75,10 @@ git reflog
 ```
 git remote add origin URL DO REPOSITÓRIO GITHUB
 ```
+- Transfere as alterações do repositório remoto para o repositório local.
+```
+git pull
+```
 - Transfere as alterações do repositório local para o remoto.
 ```
 git push -u origin main
