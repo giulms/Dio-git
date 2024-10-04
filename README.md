@@ -70,7 +70,7 @@ git reset NOME DO ARQUIVO
 ```
 git reflog
 ```
-## 🤖 Comandos Gitbub
+## 🤖 Comandos Github
 - Deixa o repositório local vinculado com o repositório remoto.
 ```
 git remote add origin URL DO REPOSITÓRIO GITHUB
