@@ -91,6 +91,10 @@ git pull
 ```
 git push -u origin main
 ```
+- força o Git a aceitar a mesclagem dos históricos diferentes.
+```
+git pull origin main --allow-unrelated-histories
+```
 ## ⭐ Comandos extras
 - Entra na pasta selecionada.
 ```
