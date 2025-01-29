@@ -91,9 +91,13 @@ git pull
 ```
 git push -u origin main
 ```
-- força o Git a aceitar a mesclagem dos históricos diferentes.
+- Força o Git a aceitar a mesclagem dos históricos diferentes.
 ```
 git pull origin main --allow-unrelated-histories
+```
+- Força a fazer um push na branch que você deseja.
+```
+git push origin +BRANCH QUE VOCÊ DESEJA ALTERAR
 ```
 ## ⭐ Comandos extras
 - Entra na pasta selecionada.
